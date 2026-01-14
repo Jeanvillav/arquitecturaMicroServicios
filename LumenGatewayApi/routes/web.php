@@ -30,3 +30,11 @@
     $router->put('/books/{book}', 'BookController@update');
     $router->patch('/books/{book}', 'BookController@update');
     $router->delete('/books/{book}', 'BookController@destroy');
+
+$router->get('/loans', 'LoanController@index');
+$router->post('/loans', 'LoanController@store');
+$router->get('/loans/overdue', 'LoanController@overdue');
+$router->get('/loans/{loan}', 'LoanController@show');
+$router->put('/loans/{loan}', 'LoanController@update');
+$router->delete('/loans/{loan}', 'LoanController@destroy');
+
